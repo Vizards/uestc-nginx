@@ -11,7 +11,7 @@ UESTC-API 的 11 个其他 API 均通过 Nginx 转发指定网页实现，此项
 
 ```
 uestc-nginx
-├── nginx.conf      Nginx 配置          
+├── nginx.conf      Nginx 配置          
 ├── login.sh        模拟登录脚本
 ├── crontab         定时任务配置
 ```
