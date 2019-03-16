@@ -22,27 +22,6 @@ Nginx 需要额外支持：
 
 - lua 脚本：[`lua-nginx-module`](https://github.com/openresty/lua-nginx-module)
 - subs_filter 指令：[`ngx_http_substitutions_filter_module`](https://github.com/yaoweibin/ngx_http_substitutions_filter_module)
-- HTTP/2
-
-也可以考虑直接使用 [Ondřej Surý 打包的 Nginx 源](https://launchpad.net/~ondrej/+archive/ubuntu/nginx)：
-
-- Debian 9.x 安装
-
-  ```bash
-  sudo wget -O /etc/apt/trusted.gpg.d/nginx-mainline.gpg https://packages.sury.org/nginx-mainline/apt.gpg
-  sudo sh -c 'echo "deb https://packages.sury.org/nginx-mainline/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/nginx-mainline.list'
-  sudo apt-get update
-  sudo apt-get install nginx
-  ```
-
-- Ubuntu 安装
-
-  ```bash
-  sudo apt-get install software-properties-common
-  sudo add-apt-repository ppa:ondrej/nginx-mainline
-  sudo apt-get update
-  sudo apt-get install nginx
-  ```
-
+- HTTP/2 (选装)
 
 
